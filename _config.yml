@@ -1,5 +1,5 @@
 # Site
-name: "Memoirs"
+name: "danisnowman"
 title: "danisnowman"
 description: "My name is Daniel Hernández and this is my blog"
 logo: 'assets/images/logo.png'
@@ -7,7 +7,7 @@ favicon: 'assets/images/logo.png'
 baseurl: /home
 google_analytics: 'UA-xxxxxxxx-1'
 disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+mailchimp-list: 'http://eepurl.com/g1YAVP'
 include: ["_pages"]
 permalink: /:title/
 email: danielernesto@ufm.edu
@@ -18,10 +18,11 @@ authors:
     name: Daniel Hernández
     display_name: Daniel
     gravatar: 43061e53ed43a9387e0298da951deb11
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net/donate/
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+    email: danisnowman@gmail.com
+    web: https://danisnowman.now.sh
+    twitter: https://twitter.com/snowminal
+    instagram: https://instagram.com/danisnowman
+    description: "I am a Computer Science major who is passionate about Jesus and I really like tech."
   john:
     name: John
     display_name: John    
@@ -71,7 +72,7 @@ adsense-data-ad-slot: "1363087678"
 lazyimages: "disabled"
 
 # Post Author Box ("enabled" or "disabled")
-authorbox: "disabled"
+authorbox: "enable"
 
 # Sass
 sass:
