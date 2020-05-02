@@ -4,6 +4,7 @@ title:  "One day I just started my adventure"
 author: sal
 categories: [ Travel ]
 image: assets/images/15.jpg
+published: false
 ---
 This will be my blog, currently it is under construction. 
 
