@@ -356,7 +356,7 @@ img, img:hover {
 
     .blog-grid-item:nth-child(2), .blog-grid-item:nth-child(3) {
         .card-text {
-            display:none;
+            display: none;
         }
         .img-thumb {
             object-fit:cover;
@@ -375,11 +375,18 @@ img, img:hover {
 .pagination {
     justify-content:center;
     a {
+        -webkit-box-shadow: 3px 3px 10px 0px rgba(180,180,180,.5), -3px -3px 10px 0px rgba(255, 255, 255, 1);
+        -moz-box-shadow:    3px 3px 10px 0px rgba(180,180,180,.5), -3px -3px 10px 0px rgba(255, 255, 255, 1);
+        box-shadow:         3px 3px 10px 0px rgba(180,180,180,.5), -3px -3px 10px 0px rgba(255, 255, 255, 1);     
         background: rgba(0,0,0,0.05);
         color:#000;
         cursor:pointer;
         &:hover, &:active {
-            background: $primary;
+            -webkit-box-shadow: 0px 2px 10px 0px rgba(126, 233, 255, 0.507), 0px -2px 10px 0px  rgba(117, 252, 223, 0.507);
+            -moz-box-shadow:    0px 2px 10px 0px rgba(126, 233, 255, 0.507), 0px -2px 10px 00px  rgba(117, 252, 223, 0.507);
+            box-shadow:         0px 2px 10px 0px rgba(126, 233, 255, 0.507), 0px -2px 10px 0px  rgba(117, 252, 223, 0.507);     
+            color: white;
+            background: linear-gradient(195deg, rgba(66,227,192,1) 51%, rgba(93,219,245,1) 100%);
             text-decoration:none;
         }
     }

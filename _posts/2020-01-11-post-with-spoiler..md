@@ -5,7 +5,7 @@ author: john
 categories: [ Lifestyle ]
 tags: [ Movies ]
 image: assets/images/12.jpg
-published: false 
+published: true 
 ---
 
 Director Roland Suso Richter's enigmatic psychological thriller (direct to video/DVD) was based upon screenwriter Michael Cooney's own play "Point of Death" - a title that gave away the film's entire plot twist premise.
