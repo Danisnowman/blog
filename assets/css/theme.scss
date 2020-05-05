@@ -58,9 +58,15 @@ h1,h2,h3,h4,h5,h6 {
     border: 0;
     min-width: 180px;
     border-radius:16px;
-    -webkit-box-shadow: 4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 255, 1);
-    -moz-box-shadow:    4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 255, 1);
-    box-shadow:         4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(180,180,180,.5), -2px -2px 3px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow:    2px 2px 3px 0px rgba(180,180,180,.5), -2px -2px 3px 0px rgba(255, 255, 255, 1);
+    box-shadow:         2px 2px 3px 0px rgba(180,180,180,.5), -2px -2px 3px 0px rgba(255, 255, 255, 1);
+    &:hover, &:active{
+        -webkit-box-shadow: 0px 2px 10px 0px rgba(70, 70, 70, 0.2), 0px -2px 10px 0px  rgba(0, 0, 0, 0.2);
+        -moz-box-shadow:    0px 2px 10px 0px rgba(70, 70, 70, 0.2), 0px -2px 10px 0px  rgba(0, 0, 0, 0.2);
+        box-shadow:         0px 2px 10px 0px rgba(70, 70, 70, 0.2), 0px -2px 10px 0px  rgba(0, 0, 0, 0.2);
+        color: white;
+    }
 }
 blockquote {
     font-family: 'Baskerville', serif;
@@ -77,6 +83,8 @@ blockquote {
 }
 // animation
 .nav-icon, 
+.mc-field-group input ,
+.sidebar,
 .hamburger-bar, 
 .hamburger-bar:before, 
 .hamburger-bar:after, 
@@ -131,12 +139,13 @@ img, img:hover {
     top: 50px;
     width: 80px;
     height: 90%;
-    border-right: solid rgba(0, 0, 0, 0.07) 1px;
     z-index: 1022;
     background:rgb(244,244,244);
     -webkit-box-shadow: 4px 4px 12px 0px rgba(180,180,180,.5), -4px -4px 12px 0px rgba(255, 255, 255, 1);
     -moz-box-shadow:    4px 4px 12px 0px rgba(180,180,180,.5), -4px -4px 12px 0px rgba(255, 255, 255, 1);
     box-shadow:         4px 4px 12px 0px rgba(180,180,180,.5), -4px -4px 12px 0px rgba(255, 255, 255, 1);
+
+    
 }
 .nav-icon {
     position: fixed;
@@ -212,6 +221,11 @@ img, img:hover {
     z-index: 1022;
     &.active {
         transform: translate(0%, 0);
+        -ms-transform: translateY(0%, 0);
+        -webkit-transform: translateY(0%, 0);
+        -moz-transform: translateY(0%, 0);
+        -o-transform: translateY(0%, 0);
+
         -webkit-box-shadow: 9px 9px 9px 0px rgba(180,180,180,.5), -9px -9px 9px 0px rgba(255, 255, 255, 1);
         -moz-box-shadow:    9px 9px 9px 0px rgba(180,180,180,.5), -9px -9px 9px 0px rgba(255, 255, 255, 1);
         box-shadow:         9px 9px 9px 0px rgba(180,180,180,.5), -9px -9px 9px 0px rgba(255, 255, 255, 1);
@@ -268,8 +282,11 @@ img, img:hover {
         margin-right: 12px;
     }
     .card {
-        &:hover {           
-           .card-title a { 
+        &:hover, &.active {   
+            -webkit-box-shadow: 9px 9px 20px 0px rgba(180,180,180,1), -9px -9px 12px 0px rgba(255, 255, 255, 1);
+            -moz-box-shadow:    9px 9px 20px 0px rgba(180,180,180,1), -9px -9px 12px 0px rgba(255, 255, 255, 1);
+            box-shadow:         9px 9px 20px 0px rgba(180,180,180,1), -9px -9px 12px 0px rgba(255, 255, 255, 1);     
+            .card-title a { 
                 background-size: 100% 100%;
             }
         }
@@ -284,7 +301,7 @@ img, img:hover {
             background-size: 0 100%;
             transition: background-size .6s ease;
             position:relative;
-            &:hover {
+            &:hover, &:active {
                 text-decoration:none;
             }
         }
@@ -361,7 +378,7 @@ img, img:hover {
         background: rgba(0,0,0,0.05);
         color:#000;
         cursor:pointer;
-        &:hover {
+        &:hover, &:active {
             background: $primary;
             text-decoration:none;
         }
@@ -402,6 +419,7 @@ img, img:hover {
             border-radius: 9px 0 0 9px;
             padding:4px 18px;
             min-width:250px;
+            z-index: 1022;
         }
         input[type="submit"] {  
             -webkit-box-shadow: 4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 248,1);
@@ -415,6 +433,15 @@ img, img:hover {
             background: linear-gradient(195deg, rgba(66,227,192,1) 51%, rgba(93,219,245,1) 100%);
             border-left: 0px solid;
             font-weight:700;
+            z-index: 1020;
+            animation: animate2 .3s;    
+            &:hover, &:active{
+                -webkit-box-shadow: 0px 2px 10px 0px rgba(126, 233, 255, 0.507), 0px -2px 10px 0px  rgba(117, 252, 223, 0.507);
+                -moz-box-shadow:    0px 2px 10px 0px rgba(126, 233, 255, 0.507), 0px -2px 10px 00px  rgba(117, 252, 223, 0.507);
+                box-shadow:         0px 2px 10px 0px rgba(126, 233, 255, 0.507), 0px -2px 10px 0px  rgba(117, 252, 223, 0.507);     
+                color: white;
+            }
+            
         }
     }
     form {
@@ -464,8 +491,11 @@ img, img:hover {
         width:50px;
         border-radius:50%;
         margin-right:10px;
-        border:2px solid darken($primary,20%);
-        padding:2px;
+        &:hover, &:active {
+            -webkit-box-shadow: 3px 3px 8px 0px rgba(155,155,155,1), -3px -3px 8px 0px rgba(255, 255, 255, 1);
+            -moz-box-shadow:    3px 3px 8px 0px rgba(155,155,155,1), -3px -3px 8px 0px rgba(255, 255, 255, 1);
+            box-shadow:         3px 3px 8px 0px rgba(155,155,155,1), -3px -3px 8px 0px rgba(255, 255, 255, 1);     
+        }
     }
 }
 .authorbox {
@@ -536,7 +566,7 @@ img, img:hover {
         border-radius: 3px;
         transition: all .4s;
     }
-    &:hover:after {
+    &:hover, &:active:after {
         opacity: 1;
     }
 }
@@ -564,6 +594,12 @@ img, img:hover {
         padding:5px 7px;
         display:inline-block;
         margin: 0 3px;
+        &:hover, &:active{
+            -webkit-box-shadow: 0px 2px 10px 0px rgba(126, 233, 255, 0.507), 0px -2px 10px 0px  rgba(117, 252, 223, 0.507);
+            -moz-box-shadow:    0px 2px 10px 0px rgba(126, 233, 255, 0.507), 0px -2px 10px 00px  rgba(117, 252, 223, 0.507);
+            box-shadow:         0px 2px 10px 0px rgba(126, 233, 255, 0.507), 0px -2px 10px 0px  rgba(117, 252, 223, 0.507);     
+            color: white;
+        }
     }
 }
 
@@ -587,7 +623,7 @@ img, img:hover {
 .show-search {
     cursor:pointer;
     margin-top: 2.5em;
-    &:hover {
+    &:hover, &:active {
         color: darken($primary,20%);
     }
 }
@@ -618,7 +654,7 @@ img, img:hover {
         display:block;
         font-size:20px;
         margin-bottom:5px;
-        &:hover {
+        &:hover, &:active {
             color: darken($primary,20%);
         }
     }
@@ -629,7 +665,7 @@ img, img:hover {
         margin-bottom:10px;
     }
     a {
-        &:hover {
+        &:hover, &:active {
             text-decoration:none;
         }
     }
@@ -719,6 +755,11 @@ body.active-side {
         -webkit-box-shadow: 4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 248,1);
         -moz-box-shadow:    4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 248,1);
         box-shadow:         4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 248,1); 
+        &.active {
+            -webkit-box-shadow: 2px 2px 4px 0px rgba(180,180,180,.2), -2px -2px 4px 0px rgba(255, 255, 255, 1);
+            -moz-box-shadow:    2px 2px 4px 0px rgba(180,180,180,.2), -2px -2px 4px 0px rgba(255, 255, 255, 1);
+            box-shadow:         2px 2px 4px 0px rgba(180,180,180,.2), -2px -2px 4px 0px rgba(255, 255, 255, 1);     
+        }
 
     }
     .container {
