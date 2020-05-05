@@ -56,7 +56,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 .btn {
     border: 0;
-    background: rgb(32, 32, 32);
     min-width: 180px;
     border-radius:16px;
     -webkit-box-shadow: 4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 255, 1);
@@ -587,6 +586,7 @@ img, img:hover {
 //search
 .show-search {
     cursor:pointer;
+    margin-top: 2.5em;
     &:hover {
         color: darken($primary,20%);
     }
@@ -604,7 +604,7 @@ img, img:hover {
 .wrap-search {
     position: fixed;
     left: 30px;
-    bottom: 80px;
+    bottom: 5rem;
     z-index: 1026;
 }
 .modal-open .modal {
@@ -714,6 +714,12 @@ body.active-side {
 @media (max-width: 600px) {
     .nav-icon, .sidebar, .share, .wrap-search {
         position:relative;
+    }
+    .nav-icon {
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 248,1);
+        -moz-box-shadow:    4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 248,1);
+        box-shadow:         4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 248,1); 
+
     }
     .container {
         padding-left:15px;

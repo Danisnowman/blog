@@ -5,11 +5,12 @@
 //
 
 .form-control {
-  -webkit-box-shadow: 3px 3px 15px 0px rgba(155, 155, 155, 0.6), -3px -3px 15px 0px rgba(255, 255, 255, .6);
-  -moz-box-shadow:    3px 3px 15px 0px rgba(155, 155, 155, 0.6), -3px -3px 15px 0px rgba(255, 255, 255, .6);
-  box-shadow:         3px 3px 15px 0px rgba(155, 155, 155, 0.6), -3px -3px 15px 0px rgba(255, 255, 255, .6);
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 248,1);
+  -moz-box-shadow:    4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 248,1);
+  box-shadow:         4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 248,1); 
   display: block;
   width: 100%;
+  margin-top: 2.5em;
   height: $input-height;
   padding: $input-padding-y $input-padding-x;
   font-family: $input-font-family;
