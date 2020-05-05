@@ -12,6 +12,7 @@
     &.focus {
       outline: 0;
       box-shadow: 0 0 0 $badge-focus-width rgba($bg, .5);
+      background: linear-gradient(195deg, rgb(0, 255, 200) 51%, rgb(0, 213, 255) 100%);
     }
   }
 }

@@ -268,7 +268,6 @@ img, img:hover {
         margin-right: 12px;
     }
     .card {
-        border:0;
         &:hover {           
            .card-title a { 
                 background-size: 100% 100%;
@@ -409,10 +408,11 @@ img, img:hover {
             -moz-box-shadow:    4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 248,1);
             box-shadow:         4px 4px 8px 0px rgba(180,180,180,.5), -4px -4px 8px 0px rgba(255, 255, 248,1);
             border-radius: 0 9px 9px 0;
-            color: #222;
+            color: #fff;
             padding: 4px 25px;
             margin-left: -5px;
-            background:$primary;
+            // background:$primary;
+            background: linear-gradient(195deg, rgba(66,227,192,1) 51%, rgba(93,219,245,1) 100%);
             border-left: 0px solid;
             font-weight:700;
         }

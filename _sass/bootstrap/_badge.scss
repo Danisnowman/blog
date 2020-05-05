@@ -53,5 +53,7 @@
 @each $color, $value in $theme-colors {
   .badge-#{$color} {
     @include badge-variant($value);
+    background: linear-gradient(195deg, rgb(0, 235, 184) 51%, rgb(15, 215, 255) 100%);
+    color: white;
   }
 }
