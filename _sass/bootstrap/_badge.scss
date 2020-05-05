@@ -4,6 +4,9 @@
 // `background-color`.
 
 .badge {
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(180,180,180,.5), -2px -2px 8px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow:    2px 2px 8px 0px rgba(180,180,180,.5), -2px -2px 8px 0px rgba(255, 255, 255, 1);
+  box-shadow:         2px 2px 8px 0px rgba(180,180,180,.5), -2px -2px 8px 0px rgba(255, 255, 255, 1);
   display: inline-block;
   padding: $badge-padding-y $badge-padding-x;
   @include font-size($badge-font-size);

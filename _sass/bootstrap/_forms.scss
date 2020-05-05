@@ -5,6 +5,9 @@
 //
 
 .form-control {
+  -webkit-box-shadow: 3px 3px 15px 0px rgba(155, 155, 155, 0.6), -3px -3px 15px 0px rgba(255, 255, 255, .6);
+  -moz-box-shadow:    3px 3px 15px 0px rgba(155, 155, 155, 0.6), -3px -3px 15px 0px rgba(255, 255, 255, .6);
+  box-shadow:         3px 3px 15px 0px rgba(155, 155, 155, 0.6), -3px -3px 15px 0px rgba(255, 255, 255, .6);
   display: block;
   width: 100%;
   height: $input-height;
@@ -16,7 +19,7 @@
   color: $input-color;
   background-color: $input-bg;
   background-clip: padding-box;
-  border: $input-border-width solid $input-border-color;
+  border: 0;
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
   @include border-radius($input-border-radius, 0);

@@ -20,7 +20,9 @@
 *::before,
 *::after {
   box-sizing: border-box; // 1
+  border-radius: 16px;
 }
+
 
 html {
   font-family: sans-serif; // 2
@@ -151,6 +153,7 @@ dd {
 
 blockquote {
   margin: 0 0 1rem;
+  border-radius: 0;
 }
 
 b,

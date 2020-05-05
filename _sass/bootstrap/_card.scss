@@ -3,6 +3,10 @@
 //
 
 .card {
+  -webkit-box-shadow: 9px 9px 12px 0px rgba(180,180,180,.5), -9px -9px 12px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow:    9px 9px 12px 0px rgba(180,180,180,.5), -9px -9px 12px 0px rgba(255, 255, 255, 1);
+  box-shadow:         9px 9px 12px 0px rgba(180,180,180,.5), -9px -9px 12px 0px rgba(255, 255, 255, 1);
+  border-radius: 16px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,6 +17,7 @@
   background-clip: border-box;
   border: $card-border-width solid $card-border-color;
   @include border-radius($card-border-radius);
+
 
   > hr {
     margin-right: 0;
@@ -201,27 +206,27 @@
           .card-img-top,
           .card-header {
             // stylelint-disable-next-line property-blacklist
-            border-top-right-radius: 0;
+            border-top-right-radius: 16px;
           }
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-blacklist
-            border-bottom-right-radius: 0;
+            border-bottom-right-radius: 16px;
           }
         }
 
         &:not(:first-child) {
-          @include border-left-radius(0);
+          @include border-left-radius(16px);
 
           .card-img-top,
           .card-header {
             // stylelint-disable-next-line property-blacklist
-            border-top-left-radius: 0;
+            border-top-left-radius: 16px;
           }
           .card-img-bottom,
           .card-footer {
             // stylelint-disable-next-line property-blacklist
-            border-bottom-left-radius: 0;
+            border-bottom-left-radius: 16px;
           }
         }
       }
