@@ -3,7 +3,7 @@ name: "danisnowman"
 title: "danisnowman"
 description: "My name is Daniel Hernández and this is my blog"
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
 baseurl: /home
 google_analytics: 'UA-59915356-6'
 disqus: 'demowebsite'

@@ -85,6 +85,8 @@ $(document).ready(function(){
 	});
 });
 
+
+
 // Close navigation when clicked .blackover (Black background)
 $(document).ready(function(){
 	$("#blackover-nav").click(function(){
