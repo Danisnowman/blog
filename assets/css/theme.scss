@@ -2,6 +2,7 @@
 
 ---
 
+$blue: rgb(55, 136, 194);
 $brown: #B59F62;
 $teal: #85efd1;
 $black: #111;
@@ -27,7 +28,7 @@ body {
     background: #E9E9E9;
 }
 a {
-    color: darken($primary, 24%);
+    color: $blue;
 }
 img {
     max-width:100%;
